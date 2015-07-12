@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ninahp.smartpark" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelloActivity"
+            android:label="@string/title_activity_hello" >
+        </activity>
+        <activity
+            android:name=".MatchFoundActivity"
+            android:label="@string/title_activity_match_found" >
+        </activity>
+        <activity
+            android:name=".WaitingActivity"
+            android:label="@string/title_activity_waiting" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".EndActivity"
+            android:label="@string/title_activity_end" >
+        </activity>
+        <activity
+            android:name=".OfferActivity"
+            android:label="@string/title_activity_offer" >
+        </activity>
+    </application>
+
+</manifest>

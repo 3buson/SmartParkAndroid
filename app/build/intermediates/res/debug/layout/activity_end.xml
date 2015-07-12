@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ninahp.smartpark.EndActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You swapped a park spot with"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/partnerTextView1"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upvote"
+        android:id="@+id/upvoteButton"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/partnerTextView1"
+        android:layout_toStartOf="@+id/partnerTextView1"
+        android:onClick="upvote"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downvote"
+        android:id="@+id/downvoteButton"
+        android:layout_alignTop="@+id/upvoteButton"
+        android:layout_toRightOf="@+id/partnerTextView1"
+        android:layout_toEndOf="@+id/partnerTextView1"
+        android:onClick="downvote"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swap a park spot"
+        android:id="@+id/swapAgainButton"
+        android:layout_below="@+id/upvoteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:onClick="swap"/>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/NinaHP/AndroidStudioProjects/SmartPark/app/src/main/res/layout/activity_end.xml -->
